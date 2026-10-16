@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Un pequeño detalle para ti</title>
+  <meta name="description" content="Una pequeña carta digital de cumpleaños." />
+  <meta name="robots" content="noindex, nofollow" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="paper-grain" aria-hidden="true"></div>
+  <div class="corner-motif corner-motif--top" aria-hidden="true"></div>
+  <div class="corner-motif corner-motif--bottom" aria-hidden="true"></div>
+
+  <main id="app">
+    <!-- ETAPA 1 y 2: Bienvenida + sobre -->
+    <section id="welcome-screen" class="screen screen--welcome" aria-label="Bienvenida">
+      <p class="eyebrow">Un pequeño detalle para ti</p>
+
+      <div class="envelope-stage">
+        <button
+          type="button"
+          id="envelope-button"
+          class="envelope"
+          aria-label="Abrir la carta"
+        >
+          <span class="envelope-shadow" aria-hidden="true"></span>
+
+          <span class="envelope-body" aria-hidden="true">
+            <span class="envelope-back"></span>
+
+            <span class="letter-peek">
+              <span class="letter-peek-line"></span>
+              <span class="letter-peek-line"></span>
+              <span class="letter-peek-line short"></span>
+            </span>
+
+            <span class="envelope-flap"></span>
+
+            <span class="envelope-seal">
+              <svg viewBox="0 0 48 48" width="22" height="22" role="presentation">
+                <path
+                  d="M24 35.5c-.5 0-1-.2-1.4-.5C16.9 30.6 10 24.7 10 18.2 10 13.7 13.5 10 18 10c2.5 0 4.7 1.2 6 3.1 1.3-1.9 3.5-3.1 6-3.1 4.5 0 8 3.7 8 8.2 0 6.5-6.9 12.4-12.6 16.8-.4.3-.9.5-1.4.5z"
+                  fill="currentColor"
+                />
+              </svg>
+            </span>
+
+            <span class="envelope-front envelope-front--left"></span>
+            <span class="envelope-front envelope-front--right"></span>
+          </span>
+        </button>
+      </div>
+
+      <p class="invitation">Hay palabras que merecen encontrar su momento.</p>
+
+      <button type="button" id="open-button" class="open-button">
+        Abrir carta
+      </button>
+    </section>
+
+    <!-- ETAPA 3 y 4: Carta y despedida -->
+    <section id="letter-screen" class="screen screen--letter" aria-label="Carta" hidden>
+      <article class="letter" id="letter">
+        <h1 class="letter-title reveal-item">Feliz cumpleaños</h1>
+
+        <div class="letter-body">
+          <p class="letter-greeting reveal-item">Holaa, feliz cumpleaños. 🥳❤️</p>
+
+          <p class="reveal-item">
+            Espero de corazón que hoy tengas un día muy bonito, que estés
+            rodeada de personas que te quieren y que este nuevo año de vida
+            venga cargado de cosas buenas para ti. Deseo que sigas cumpliendo
+            tus metas, creciendo como persona y que todo ese esfuerzo que
+            haces por tu futuro, especialmente con odontología, te lleve a
+            lugares muy bonitos. De verdad, espero que la vida te sonría
+            muchísimo.
+          </p>
+
+          <p class="reveal-item">
+            No quería dejar pasar este día sin escribirte. Sé que hace
+            bastante no hablamos y que las cosas entre nosotros no terminaron
+            de la mejor manera. Con el tiempo he podido entender y reconocer
+            cosas que en su momento no supe ver, y aunque ya haya pasado
+            bastante desde entonces, quería aprovechar este día para
+            desearte lo mejor.
+          </p>
+
+          <p class="reveal-item">
+            Fuiste una persona muy especial para mí y guardo con mucho cariño
+            los momentos que compartimos. A veces recuerdo esa etapa de mi
+            vida y me alegra haberla vivido contigo. Independientemente de
+            cómo terminaron las cosas, hiciste parte de momentos muy bonitos
+            que siempre voy a recordar con cariño.
+          </p>
+
+          <p class="reveal-item">
+            Aunque hoy ya no sepa mucho de tu vida, me sigue pareciendo
+            bonito pensar que estás avanzando, persiguiendo tus sueños y
+            construyendo tu futuro. Espero que estés bien, que seas feliz y
+            que tengas muchas razones para sentirte orgullosa de ti misma.
+          </p>
+
+          <p class="reveal-item">
+            No sé si te lo había dicho antes, pero hay personas a las que uno
+            les desea cosas buenas incluso cuando el tiempo y las
+            circunstancias hacen que los caminos se separen. Y tú eres una de
+            esas personas para mí.
+          </p>
+
+          <p class="reveal-item">
+            En fin, no quería dejar pasar la oportunidad de recordarte lo
+            especial que eres y desearte un cumpleaños muy bonito. Ojalá
+            este nuevo año te traiga experiencias increíbles, personas que te
+            hagan bien y muchísimos motivos para sonreír.
+          </p>
+
+          <p class="reveal-item">
+            Cuídate mucho y nunca dejes de perseguir todo aquello que te
+            hace feliz. Te mando un abrazo grande. ❤️
+          </p>
+        </div>
+
+        <div class="farewell reveal-item">
+          <hr class="divider" aria-hidden="true" />
+          <p class="farewell-line">Que la vida te regale muchas cosas bonitas.</p>
+          <p class="farewell-main">Feliz cumpleaños ❤️</p>
+          <p class="signature">Con cariño.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <div id="particle-layer" aria-hidden="true"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
